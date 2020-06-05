@@ -3,6 +3,8 @@ WS281x ("Neopixel") LED strip control on a Raspberry Pi
 
 This script helps me to control a WS2812B LED strip when my 3D printer does something.
 
+[See it in action (youtube.com)](https://youtu.be/5Byco-xknHg)
+
 ## Usage
 `sudo python ./control.py on|off|toggle|dim|bright|done|attention|fail|error|unlock`
 

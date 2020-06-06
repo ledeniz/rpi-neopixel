@@ -87,13 +87,16 @@ if __name__ == '__main__':
         color = colors["dim"]
 
     elif args.mode == 'done':
-        color = colors["violet"]
+        color = colors["bright"]
 
     elif args.mode == 'attention':
         color = colors["blue"]
 
     elif args.mode == 'fail':
         color = colors["orange"]
+
+    elif args.mode == 'violet':
+        color = colors["violet"]
 
     elif args.mode == 'error':
         color = colors["red"]

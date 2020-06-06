@@ -107,6 +107,7 @@ if __name__ == '__main__':
             color = colors["none"]
     else:
         print("invalid argument: '" + str(args.mode) + "'")
+        os.remove(LOCK)
         exit()
 
     fill(strip, color)

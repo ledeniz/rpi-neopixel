@@ -78,7 +78,7 @@ if __name__ == '__main__':
         exit()
 
     elif args.mode == 'on':
-        color = colors["default"] 
+        color = state["color"] or colors["default"] 
 
     elif args.mode == 'bright':
         color = colors["bright"]

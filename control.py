@@ -78,7 +78,7 @@ if __name__ == '__main__':
         exit()
 
     elif args.mode == 'on':
-        color = state["color"] or colors["default"] 
+        color = (state["color"] or colors["default"] 
 
     elif args.mode == 'bright':
         color = colors["bright"]
@@ -110,7 +110,10 @@ if __name__ == '__main__':
         os.remove(LOCK)
         exit()
 
-    if color != state["color"]:
+    if state["active"]:
+        if color != state["color"]:
+            fill(strip, color)
+    else:
         fill(strip, color)
 
     state["active"] = active

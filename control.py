@@ -110,7 +110,7 @@ if __name__ == '__main__':
         os.remove(LOCK)
         exit()
 
-    if color == state["color"]:
+    if color != state["color"]:
         fill(strip, color)
 
     state["active"] = active

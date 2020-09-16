@@ -8,3 +8,4 @@ _rpi_ws281x.py
 *.egg
 *.zip
 .vscode
+*.code-workspace

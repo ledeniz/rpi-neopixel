@@ -37,7 +37,7 @@ colors = {
     "blue":   Color(155, 155, 255)
 }
 
-colors["default"] = colors["dim"]
+colors["default"] = colors["bright"]
 
 def fill(strip, color):
     for i in range(0, strip.numPixels(), 1):
